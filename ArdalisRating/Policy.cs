@@ -26,7 +26,14 @@ namespace ArdalisRating
         public int Year { get; set; }
         public int Miles { get; set; }
         public decimal Deductible { get; set; }
+
+        #endregion
+
+        #region Flood
+        public int ElevationAboveSeaLevelFeet { get; set; }
         #endregion
 
     }
+
+
 }
