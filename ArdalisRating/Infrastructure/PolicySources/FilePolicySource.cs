@@ -5,7 +5,8 @@ using System.IO;
 
 namespace ArdalisRating
 {
-    public class FilePolicySource
+
+    public class FilePolicySource : IPolicySource
     {
         //SRP Example
         public string GetPolicyFromSource()

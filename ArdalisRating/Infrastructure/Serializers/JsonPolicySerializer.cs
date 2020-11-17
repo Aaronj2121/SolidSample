@@ -6,15 +6,15 @@ using System.Text;
 
 namespace ArdalisRating
 {
-    public class PolicySerializer
+  
+    public class JsonPolicySerializer : IPolicySerializer
     {
         //SRP example
-        public Policy GetPolicyFromJsonString(string policyJson)
+        public Policy GetPolicyFromString(string policyJson)
         {
-            Policy policy = JsonConvert.DeserializeObject<Policy>(policyJson,
+            return JsonConvert.DeserializeObject<Policy>(policyJson,
                 new StringEnumConverter());
-
-            return policy;
+           
         }
     }
 }

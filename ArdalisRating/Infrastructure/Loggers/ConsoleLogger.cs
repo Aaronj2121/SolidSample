@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace ArdalisRating
 {
-    public class ConsoleLogger
+
+    public class ConsoleLogger : ILogger
     {
         //SRP Example
         public void Log(string message)
@@ -12,4 +14,6 @@ namespace ArdalisRating
             Console.WriteLine(message);
         }
     }
+
+    
 }
